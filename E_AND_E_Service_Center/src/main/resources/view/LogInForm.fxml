@@ -1,14 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.LogInFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="636.0" prefWidth="884.0" style="-fx-background-color: #d3d3d3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+   <children>
+      <Pane layoutX="313.0" layoutY="160.0" prefHeight="401.0" prefWidth="558.0" style="-fx-background-color: #abb8c3;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label layoutX="13.0" layoutY="20.0" prefHeight="51.0" prefWidth="164.0" text="Email         : " textFill="#000e91">
+               <font>
+                  <Font name="Bell MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="138.0" prefHeight="51.0" prefWidth="164.0" text="Password   :" textFill="#000e91">
+               <font>
+                  <Font name="Bell MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <JFXPasswordField layoutX="180.0" layoutY="137.0" prefHeight="51.0" prefWidth="348.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField layoutX="178.0" layoutY="25.0" prefHeight="42.0" prefWidth="348.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="419.0" layoutY="203.0" onAction="#logInButtonOnAction" prefHeight="43.0" prefWidth="109.0" style="-fx-background-color: blue;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="366.0" layoutY="254.0" onAction="#chagnePasswordButtonOnAction" prefHeight="29.0" prefWidth="164.0" text="Forgotten Password ?" textAlignment="RIGHT" textFill="#1e98b4">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="184.0" layoutY="329.0" onAction="#createAccountButtonOnAction" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: #24c215;" text="Create New Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="149.0" layoutY="119.0" prefHeight="128.0" prefWidth="52.0" text="E" textFill="#83438d">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="341.0" prefHeight="0.0" prefWidth="22.0" text="E" textFill="#83438d">
+         <font>
+            <Font name="System Italic" size="88.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="231.0" prefHeight="128.0" prefWidth="78.0" text="&amp;" textFill="#83438d">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="490.0" text="Service Center" textFill="#2b2b6d">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="602.0" text="High Quality Service &gt;&gt;&gt; connect with experts" textFill="#303271">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="128.0" fitWidth="262.0" layoutX="311.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logoIcon.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>

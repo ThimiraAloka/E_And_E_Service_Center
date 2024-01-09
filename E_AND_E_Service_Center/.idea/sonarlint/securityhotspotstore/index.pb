@@ -9,3 +9,7 @@ b
 2src/main/java/controller/SingInFormController.java,c\b\cb9b209a66ee9abbb7056c9ab519ee532866f7f6
 a
 1src/main/java/controller/LogInFormController.java,9\6\96aaec0e582b48d64a826810e464185cd0e4409a
+d
+4src/main/java/controller/PasswordFormController.java,f\7\f7c529a98e62846e674ca97b70404ce769c165c9
+b
+2src/main/java/controller/SingUpFormController.java,9\2\927b53be827fd6aa87f01e6291441d85d0baa83c

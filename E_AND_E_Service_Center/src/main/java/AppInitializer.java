@@ -18,6 +18,7 @@ public class AppInitializer extends Application {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/LogInForm.fxml"))));
         stage.centerOnScreen();
         stage.setTitle("Log in Form");
+        stage.setResizable(false);
         stage.getIcons().add(new Image("img/appIcon.png"));
         stage.show();
     }
