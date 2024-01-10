@@ -13,3 +13,5 @@ d
 4src/main/java/controller/PasswordFormController.java,f\7\f7c529a98e62846e674ca97b70404ce769c165c9
 b
 2src/main/java/controller/SingUpFormController.java,9\2\927b53be827fd6aa87f01e6291441d85d0baa83c
+d
+4src/main/java/controller/ChangePwFormController.java,1\8\185b1463d2954dfbe45254d565b713abc8b03820

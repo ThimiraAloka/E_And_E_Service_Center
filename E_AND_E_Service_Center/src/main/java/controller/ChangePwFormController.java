@@ -4,13 +4,13 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
-public class PasswordFormController {
+public class ChangePwFormController {
 
     @FXML
-    private JFXTextField txtEmail;
+    private JFXTextField txtNewPassword;
 
     @FXML
-    private JFXTextField txtOTP;
+    private JFXTextField txtNewPasswordConfirm;
 
     @FXML
     void backLogInButtonOnAction(ActionEvent event) {
@@ -18,12 +18,7 @@ public class PasswordFormController {
     }
 
     @FXML
-    void checkOTPButtonOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void sendOTPButtonOnAction(ActionEvent event) {
+    void passworRestButtonOnAction(ActionEvent event) {
 
     }
 
