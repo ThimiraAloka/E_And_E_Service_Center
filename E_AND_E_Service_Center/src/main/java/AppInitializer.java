@@ -15,8 +15,8 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-       // stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/LogInForm.fxml"))));
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/PasswordForm.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/LogInForm.fxml"))));
+       // stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/PasswordForm.fxml"))));
         stage.centerOnScreen();
         stage.setTitle("Log in Form");
         stage.setResizable(false);

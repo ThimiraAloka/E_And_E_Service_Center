@@ -28,16 +28,16 @@
                   <Font name="Bell MT Bold" size="28.0" />
                </font>
             </Label>
-            <JFXPasswordField fx:id="txtPassword" layoutX="180.0" layoutY="137.0" prefHeight="51.0" prefWidth="348.0" promptText="Enter Password">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </JFXPasswordField>
             <JFXTextField fx:id="txtEmail" layoutX="178.0" layoutY="25.0" prefHeight="42.0" prefWidth="348.0" promptText="Enter Emali address">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" layoutX="180.0" layoutY="137.0" prefHeight="51.0" prefWidth="348.0" promptText="Enter Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
             <JFXButton layoutX="419.0" layoutY="203.0" onAction="#logInButtonOnAction" prefHeight="43.0" prefWidth="109.0" style="-fx-background-color: blue;" text="Log In" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="19.0" />

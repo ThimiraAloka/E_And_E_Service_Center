@@ -1,7 +1,12 @@
 
+v
+java:S1104
+"TMake txtEmail a static final constant or non-public and provide accessors if needed.(Ø¦½üÿÿÿÿ8¤ï¶½Ï1
+t
+java:S1104"RMake txtOTP a static final constant or non-public and provide accessors if needed.(Çß­¡ùÿÿÿÿ8¤ï¶½Ï1
 £
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÆµÁëÿÿÿÿÿ8³ôêÎ1
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÆµÁëÿÿÿÿÿ8ÏÅ¸½Ï1
 £
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İÖŸıÿÿÿÿ8Ï»·êÎ1
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İÖŸıÿÿÿÿ8æï¶½Ï1
 £
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø±Ï”şÿÿÿÿ8Ğ»·êÎ1
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø±Ï”şÿÿÿÿ8æï¶½Ï1

@@ -9,5 +9,8 @@
         <module name="E_AND_E_Service_Center" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="E_AND_E_Service_Center" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

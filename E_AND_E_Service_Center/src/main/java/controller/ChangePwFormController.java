@@ -6,11 +6,9 @@ import javafx.fxml.FXML;
 
 public class ChangePwFormController {
 
-    @FXML
-    private JFXTextField txtNewPassword;
 
-    @FXML
-    private JFXTextField txtNewPasswordConfirm;
+    public JFXTextField txtNewPassword;
+    public JFXTextField txtNewPasswordConfirm;
 
     @FXML
     void backLogInButtonOnAction(ActionEvent event) {

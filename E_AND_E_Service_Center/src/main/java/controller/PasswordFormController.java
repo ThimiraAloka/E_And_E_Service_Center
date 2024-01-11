@@ -6,11 +6,9 @@ import javafx.fxml.FXML;
 
 public class PasswordFormController {
 
-    @FXML
-    private JFXTextField txtEmail;
 
-    @FXML
-    private JFXTextField txtOTP;
+    public JFXTextField txtEmail;
+    public JFXTextField txtOTP;
 
     @FXML
     void backLogInButtonOnAction(ActionEvent event) {

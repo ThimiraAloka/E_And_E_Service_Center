@@ -1,3 +1,10 @@
 
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(®æ”º
+x
+java:S1104
+"[Make txtSecurityCode a static final constant or non-public and provide accessors if needed.(‘¥√8£è¨Ωœ1
+w
+java:S1104"ZMake txtCreateEmail a static final constant or non-public and provide accessors if needed.( Í∏µ8†πÆΩœ1
+y
+java:S1104"]Make txtCreatePassword a static final constant or non-public and provide accessors if needed.(‡—¨C8≤§±Ωœ1
+£
+java:S1186"ÄAdd a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”Ä—é˘ˇˇˇˇ8‘è¨Ωœ1

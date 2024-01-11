@@ -7,11 +7,9 @@ import javafx.fxml.FXML;
 
 public class SingUpFormController {
 
-    @FXML
-    private JFXTextField txtCreateEmail;
-
-    @FXML
-    private JFXPasswordField txtCreatePassword;
+    public JFXPasswordField txtSecurityCode;
+    public JFXTextField txtCreateEmail;
+    public JFXPasswordField txtCreatePassword;
 
     @FXML
     void createAccountButtonOnAction(ActionEvent event) {
