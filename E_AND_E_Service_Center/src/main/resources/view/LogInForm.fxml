@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="636.0" prefWidth="884.0" style="-fx-background-color: #d3d3d3;" stylesheets="@../CssStyleSheet/LogInFormStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+<AnchorPane fx:id="paneLogIn" prefHeight="636.0" prefWidth="884.0" style="-fx-background-color: #d3d3d3;" stylesheets="@../CssStyleSheet/LogInFormStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
    <children>
       <Pane layoutX="313.0" layoutY="160.0" prefHeight="401.0" prefWidth="558.0" style="-fx-background-color: #abb8c3;">
          <opaqueInsets>

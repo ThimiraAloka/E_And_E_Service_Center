@@ -32,7 +32,10 @@ public class SingUpFormController {
 
         if (!Objects.equals(txtSecurityCode.getText(), "e&eAdmin")) {
             new Alert(Alert.AlertType.ERROR, "Register Fail! Input Correct Secure Code Please...").show();
-        } else if(!Objects.equals(txtCreatePassword.getText(), "") && !Objects.equals(txtCreateEmail.getText(), "")){
+
+        } else if(!Objects.equals(txtCreatePassword.getText(), "") &&
+                  !Objects.equals(txtCreateEmail.getText(), "")){
+
             UserDto dto = new UserDto(txtCreateEmail.getText(), txtCreatePassword.getText());
             boolean isSaved = userBo.saveUser(dto);
             if (isSaved) {
@@ -52,4 +55,14 @@ public class SingUpFormController {
         }
     }
 
+    public void logInAccountButtonOnAction(ActionEvent actionEvent) {
+        Stage stage = (Stage) paneSingUp.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/LogInForm.fxml"))));
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.show();
+    }
 }
