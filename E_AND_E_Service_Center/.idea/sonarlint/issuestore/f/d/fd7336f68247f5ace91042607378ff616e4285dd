@@ -1,7 +1,7 @@
 
-_
-java:S2094"BRemove this empty class, write its code or make it an "interface".(® ©ş8Í©Ò1
+P
+java:S1121".Extract the assignment out of this expression.(¬›’°úÿÿÿÿ8ª³„„Ò1
+¶
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(® ©ş8¹³„„Ò1
 X
-java:S1128"6Remove this unused import 'java.net.ConnectException'.(éâ¿Šüÿÿÿÿ8¨ôÒ1
-M
-java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8Ñ©Ò1
+java:S6437"6Revoke and change this password, as it is compromised.(‘®ôüÿÿÿÿ8¾³„„Ò1
