@@ -67,8 +67,6 @@ N
 src/main/java/entity/Item.java,e\b\ebc4e4f150c5bb35020e5b9eb0c7b226c08ed0b0
 R
 "src/main/java/entity/Customer.java,f\1\f14bad5e68bdfef4c489ba84a4d9c620bc6cb0f1
-O
-src/main/java/dto/UsersDto.java,2\9\290ed9277a1f1df094dcff8cfda160490d521c4f
 N
 src/main/java/dto/UserDto.java,1\5\15c81aa038b853c33b659e8125608969dae8b684
 N

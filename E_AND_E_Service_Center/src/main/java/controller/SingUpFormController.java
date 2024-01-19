@@ -30,17 +30,14 @@ public class SingUpFormController {
     @FXML
     void createAccountButtonOnAction(ActionEvent event)throws SQLException,ClassNotFoundException {
 
-        if (!Objects.equals(txtSecurityCode.getText(), "e&eAdmin")){
-            new Alert(Alert.AlertType.ERROR,"Register Fail! Input Correct Secure Code Please...").show();
-        }
+        if (!Objects.equals(txtSecurityCode.getText(), "e&eAdmin")) {
+            new Alert(Alert.AlertType.ERROR, "Register Fail! Input Correct Secure Code Please...").show();
+        } else if(!Objects.equals(txtCreatePassword.getText(), "") && !Objects.equals(txtCreateEmail.getText(), "")){
             UserDto dto = new UserDto(txtCreateEmail.getText(), txtCreatePassword.getText());
-
             boolean isSaved = userBo.saveUser(dto);
-            if (isSaved){
-                new Alert(Alert.AlertType.INFORMATION,"User Registered!").show();
-                try{
-                    Thread.sleep(5000);
-                }catch (InterruptedException e){}
+            if (isSaved) {
+                new Alert(Alert.AlertType.INFORMATION, "User Registered!").show();
+
                 Stage stage = (Stage) paneSingUp.getScene().getWindow();
                 try {
                     stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/LogInForm.fxml"))));
@@ -49,7 +46,9 @@ public class SingUpFormController {
                     throw new RuntimeException(e);
                 }
                 stage.show();
-
+            }
+        }else{
+            new Alert(Alert.AlertType.ERROR, "Please Fill information completely...").show();
         }
     }
 
