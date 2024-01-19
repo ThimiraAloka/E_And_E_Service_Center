@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="636.0" prefWidth="884.0" style="-fx-background-color: #d3d3d3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+<AnchorPane prefHeight="636.0" prefWidth="884.0" style="-fx-background-color: #d3d3d3;" stylesheets="@../CssStyleSheet/LogInFormStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
    <children>
       <Pane layoutX="313.0" layoutY="160.0" prefHeight="401.0" prefWidth="558.0" style="-fx-background-color: #abb8c3;">
          <opaqueInsets>
@@ -55,32 +55,32 @@
             </JFXButton>
          </children>
       </Pane>
-      <Label layoutX="149.0" layoutY="119.0" prefHeight="128.0" prefWidth="52.0" text="E" textFill="#83438d">
+      <Label layoutX="145.0" layoutY="-11.0" prefHeight="128.0" prefWidth="52.0" text="E">
          <font>
             <Font size="88.0" />
          </font>
       </Label>
-      <Label layoutX="149.0" layoutY="341.0" prefHeight="0.0" prefWidth="22.0" text="E" textFill="#83438d">
+      <Label layoutX="140.0" layoutY="233.0" prefHeight="0.0" prefWidth="22.0" text="E">
          <font>
             <Font name="System Italic" size="88.0" />
          </font>
       </Label>
-      <Label layoutX="132.0" layoutY="231.0" prefHeight="128.0" prefWidth="78.0" text="&amp;" textFill="#83438d">
+      <Label layoutX="140.0" layoutY="106.0" prefHeight="128.0" prefWidth="78.0" text="&amp;">
          <font>
             <Font size="88.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="503.0" text="Service Center" textFill="#2b2b6d">
+      <Label layoutX="35.0" layoutY="503.0" text="Service Center" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="40.0" />
          </font>
       </Label>
-      <Label layoutX="288.0" layoutY="602.0" text="High Quality Service &gt;&gt;&gt; connect with experts" textFill="#303271">
+      <Label layoutX="288.0" layoutY="602.0" text="High Quality Service &gt;&gt;&gt; connect with experts" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <ImageView fitHeight="128.0" fitWidth="262.0" layoutX="311.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="121.0" fitWidth="246.0" layoutX="624.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/logoIcon.png" />
          </image>
