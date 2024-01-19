@@ -21,6 +21,7 @@ import java.util.Objects;
 public class SingUpFormController {
 
     public AnchorPane paneSingUp;
+    public JFXPasswordField txtConfirmPassword;
     private UserBo userBo = BoFactory.getInstance().getBo(BoType.USER);
 
     public JFXPasswordField txtSecurityCode;
@@ -30,25 +31,34 @@ public class SingUpFormController {
     @FXML
     void createAccountButtonOnAction(ActionEvent event)throws SQLException,ClassNotFoundException {
 
-        if (!Objects.equals(txtSecurityCode.getText(), "e&eAdmin")) {
+        if (userBo.isValidPassCode(txtSecurityCode.getText())) {
             new Alert(Alert.AlertType.ERROR, "Register Fail! Input Correct Secure Code Please...").show();
 
         } else if(!Objects.equals(txtCreatePassword.getText(), "") &&
                   !Objects.equals(txtCreateEmail.getText(), "")){
 
-            UserDto dto = new UserDto(txtCreateEmail.getText(), txtCreatePassword.getText());
-            boolean isSaved = userBo.saveUser(dto);
-            if (isSaved) {
-                new Alert(Alert.AlertType.INFORMATION, "User Registered!").show();
+            if(!txtCreatePassword.getText().equals(txtConfirmPassword.getText())) {
+                new Alert(Alert.AlertType.ERROR, "Password is not mach... please enter same password").show();
+            }else {
+                if (userBo.isValidPassword(txtCreatePassword.getText())) {
 
-                Stage stage = (Stage) paneSingUp.getScene().getWindow();
-                try {
-                    stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/LogInForm.fxml"))));
+                    UserDto dto = new UserDto(txtCreateEmail.getText(), txtCreatePassword.getText());
+                    boolean isSaved = userBo.saveUser(dto);
+                    if (isSaved) {
+                        new Alert(Alert.AlertType.INFORMATION, "User Registered!").show();
 
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+                        Stage stage = (Stage) paneSingUp.getScene().getWindow();
+                        try {
+                            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/LogInForm.fxml"))));
+
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                        stage.show();
+                    }
+                } else {
+                    new Alert(Alert.AlertType.ERROR, "Password not Strong... *(read) ").show();
                 }
-                stage.show();
             }
         }else{
             new Alert(Alert.AlertType.ERROR, "Please Fill information completely...").show();

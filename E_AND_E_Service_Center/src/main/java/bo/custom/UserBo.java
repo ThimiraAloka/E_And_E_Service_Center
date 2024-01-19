@@ -11,5 +11,8 @@ public interface UserBo extends SuperBo {
     boolean updateUser(UserDto dto) throws SQLException, ClassNotFoundException;
     boolean deleteUser(String email) throws SQLException, ClassNotFoundException;
     List<UserDto> allUser() throws SQLException, ClassNotFoundException;
+    boolean isValidPassCode(String code);
+
+    boolean isValidPassword(String code);
 
 }

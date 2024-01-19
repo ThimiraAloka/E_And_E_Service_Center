@@ -34,12 +34,17 @@
                   <Font size="20.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField fx:id="txtCreatePassword" layoutX="58.0" layoutY="117.0" prefHeight="51.0" prefWidth="444.0" promptText="Enter Password *">
+            <JFXPasswordField fx:id="txtCreatePassword" layoutX="58.0" layoutY="107.0" prefHeight="51.0" prefWidth="444.0" promptText="Enter Password     *">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXPasswordField>
-            <JFXPasswordField fx:id="txtSecurityCode" layoutX="53.0" layoutY="202.0" prefHeight="51.0" prefWidth="444.0" promptText="Enter security code">
+            <JFXPasswordField fx:id="txtConfirmPassword" layoutX="58.0" layoutY="186.0" prefHeight="51.0" prefWidth="444.0" promptText="Confirm Password *">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="txtSecurityCode" layoutX="58.0" layoutY="264.0" prefHeight="51.0" prefWidth="207.0" promptText="Enter security code">
                <font>
                   <Font size="20.0" />
                </font>
