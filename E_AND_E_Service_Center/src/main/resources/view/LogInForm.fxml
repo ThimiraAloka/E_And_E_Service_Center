@@ -55,12 +55,12 @@
             </JFXButton>
          </children>
       </Pane>
-      <Label layoutX="145.0" layoutY="-11.0" prefHeight="128.0" prefWidth="52.0" text="E">
+      <Label layoutX="145.0" layoutY="-4.0" prefHeight="128.0" prefWidth="52.0" text="E">
          <font>
             <Font size="88.0" />
          </font>
       </Label>
-      <Label layoutX="140.0" layoutY="233.0" prefHeight="0.0" prefWidth="22.0" text="E">
+      <Label layoutX="140.0" layoutY="225.0" prefHeight="0.0" prefWidth="22.0" text="E">
          <font>
             <Font name="System Italic" size="88.0" />
          </font>
