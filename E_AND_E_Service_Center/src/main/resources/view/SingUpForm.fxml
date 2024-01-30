@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -12,9 +13,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="paneSingUp" prefHeight="636.0" prefWidth="884.0" style="-fx-background-color: #888888;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SingUpFormController">
+<AnchorPane fx:id="paneSingUp" prefHeight="636.0" prefWidth="884.0" style="-fx-background-color: EEEDEB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SingUpFormController">
    <children>
-      <ImageView fitHeight="128.0" fitWidth="262.0" layoutX="321.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="128.0" fitWidth="262.0" layoutX="323.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/logoIcon.png" />
          </image>
@@ -24,22 +25,22 @@
             <Font name="System Italic" size="21.0" />
          </font>
       </Text>
-      <Pane layoutX="243.0" layoutY="164.0" prefHeight="424.0" prefWidth="558.0" style="-fx-background-color: #7aafe9;">
+      <Pane layoutX="243.0" layoutY="132.0" prefHeight="456.0" prefWidth="558.0" style="-fx-background-color: #40A2D8;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
          <children>
-            <JFXTextField fx:id="txtCreateEmail" layoutX="57.0" layoutY="37.0" prefHeight="43.0" prefWidth="444.0" promptText="Enter Emali address">
+            <JFXTextField fx:id="txtCreateEmail" layoutX="57.0" layoutY="26.0" prefHeight="43.0" prefWidth="444.0" promptText="Enter Emali address">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField fx:id="txtCreatePassword" layoutX="58.0" layoutY="107.0" prefHeight="51.0" prefWidth="444.0" promptText="Enter Password     *">
+            <JFXPasswordField fx:id="txtCreatePassword" layoutX="58.0" layoutY="83.0" prefHeight="51.0" prefWidth="444.0" promptText="Enter Password     *">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXPasswordField>
-            <JFXPasswordField fx:id="txtConfirmPassword" layoutX="58.0" layoutY="186.0" prefHeight="51.0" prefWidth="444.0" promptText="Confirm Password *">
+            <JFXPasswordField fx:id="txtConfirmPassword" layoutX="58.0" layoutY="146.0" prefHeight="51.0" prefWidth="444.0" promptText="Confirm Password *">
                <font>
                   <Font size="20.0" />
                </font>
@@ -64,6 +65,21 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
+            <Label layoutX="58.0" layoutY="211.0" prefHeight="28.0" prefWidth="122.0" text="Job Role : ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="radioBtnAdmin" layoutX="180.0" layoutY="215.0" text="Admin">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="radioBtnEmployee" layoutX="338.0" layoutY="215.0" prefHeight="26.0" prefWidth="129.0" text="Employee">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXRadioButton>
          </children>
       </Pane>
       <Label layoutX="298.0" layoutY="605.0" text="High Quality Service &gt;&gt;&gt; connect with experts" textFill="#303271">
