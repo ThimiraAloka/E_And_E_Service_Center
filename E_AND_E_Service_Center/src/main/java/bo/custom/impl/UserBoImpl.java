@@ -8,6 +8,7 @@ import dto.UserDto;
 import entity.User;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.regex.Pattern;
@@ -49,12 +50,10 @@ public class UserBoImpl implements UserBo {
 
     @Override
     public boolean saveUser(UserDto dto) throws SQLException, ClassNotFoundException {
-
-
-
         return userDao.save(new User(
                 dto.getEmail(),
-                dto.getPassword()
+                dto.getPassword(),
+                dto.getJobRole()
         ));
     }
 
@@ -70,6 +69,15 @@ public class UserBoImpl implements UserBo {
 
     @Override
     public List<UserDto> allUser() throws SQLException, ClassNotFoundException {
-        return null;
+        List<User> entityList = userDao.getAll();
+        List<UserDto> list = new ArrayList<>();
+        for (User users:entityList) {
+            list.add(new UserDto(
+                    users.getEmail(),
+                    users.getPassword(),
+                    users.getJobRole()
+            ));
+        }
+        return list;
     }
 }

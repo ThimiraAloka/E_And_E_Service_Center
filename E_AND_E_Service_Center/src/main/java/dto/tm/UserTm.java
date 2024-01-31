@@ -11,11 +11,13 @@ import lombok.Setter;
 public class UserTm {
     private String email;
     private  String password;
+    private String jobRole;
     @Override
     public String toString() {
         return "UsersTm{" +
                 "email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", jobRole='" + jobRole +
                 '}';
     }
 

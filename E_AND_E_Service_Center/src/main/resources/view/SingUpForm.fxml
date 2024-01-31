@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXPasswordField?>
-<?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -45,6 +45,7 @@
                   <Font size="20.0" />
                </font>
             </JFXPasswordField>
+            <JFXComboBox fx:id="cmbBoxJobRole" layoutX="58.0" layoutY="216.0" prefHeight="43.0" prefWidth="444.0" promptText="Select Job Role" />
             <JFXPasswordField fx:id="txtSecurityCode" layoutX="58.0" layoutY="264.0" prefHeight="51.0" prefWidth="207.0" promptText="Enter security code">
                <font>
                   <Font size="20.0" />
@@ -65,21 +66,6 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <Label layoutX="58.0" layoutY="211.0" prefHeight="28.0" prefWidth="122.0" text="Job Role : ">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <JFXRadioButton fx:id="radioBtnAdmin" layoutX="180.0" layoutY="215.0" text="Admin">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </JFXRadioButton>
-            <JFXRadioButton fx:id="radioBtnEmployee" layoutX="338.0" layoutY="215.0" prefHeight="26.0" prefWidth="129.0" text="Employee">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </JFXRadioButton>
          </children>
       </Pane>
       <Label layoutX="298.0" layoutY="605.0" text="High Quality Service &gt;&gt;&gt; connect with experts" textFill="#303271">

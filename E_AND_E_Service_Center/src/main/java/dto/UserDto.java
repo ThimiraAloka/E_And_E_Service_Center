@@ -13,11 +13,13 @@ public class UserDto {
 
     private String email;
     private String password;
+    private String jobRole;
 
     public String toString(){
         return "Users{" +
                 "email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", jobRole='" + jobRole +
                 '}';
     }
 
