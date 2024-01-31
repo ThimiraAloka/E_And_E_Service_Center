@@ -1,16 +1,16 @@
 
-g	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8³ĞìîÕ1
-g	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8´ĞìîÕ1
-g	java:S112T"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8»Ê»ùÕ1
+g	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8½ùíúÕ1
+g	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8½ùíúÕ1
+g	java:S112T"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¦ş„ûÕ1
 v
-java:S1104"TMake txtEmail a static final constant or non-public and provide accessors if needed.(Ø¦½üÿÿÿÿ8µĞìîÕ1
+java:S1104"TMake txtEmail a static final constant or non-public and provide accessors if needed.(Ø¦½üÿÿÿÿ8¾ùíúÕ1
 t
-java:S1104"WMake txtPassword a static final constant or non-public and provide accessors if needed.(Óšº÷8µĞìîÕ1
+java:S1104"WMake txtPassword a static final constant or non-public and provide accessors if needed.(Óšº÷8¾ùíúÕ1
 w
-java:S1104"UMake paneLogIn a static final constant or non-public and provide accessors if needed.(Ö³‡ÿúÿÿÿÿ8µĞìîÕ1
+java:S1104"UMake paneLogIn a static final constant or non-public and provide accessors if needed.(Ö³‡ÿúÿÿÿÿ8¾ùíúÕ1
 t
-java:S3776)"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ì³ªşÿÿÿÿ8ÏÊ»ùÕ1
+java:S3776)"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ì³ªşÿÿÿÿ8œúíúÕ1
 T
-java:S3972C"7Move this "if" to a new line or add the missing "else".(¯Ğ¹8ŞÑìîÕ1
+java:S3972C"7Move this "if" to a new line or add the missing "else".(¯Ğ¹8úíúÕ1
 T
-java:S1172N"2Remove this unused method parameter "actionEvent".(ŸŸ„ûÿÿÿÿ8ßÑìîÕ1
+java:S1172N"2Remove this unused method parameter "actionEvent".(ŸŸ„ûÿÿÿÿ8ŸúíúÕ1

@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="paneDashBoardEm" prefHeight="637.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardForEmployeeFormController">
+<AnchorPane id="paneEmployee" prefHeight="637.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardForEmployeeFormController">
    <children>
       <ImageView fitHeight="638.0" fitWidth="801.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -20,24 +19,39 @@
             <Font name="LKSinhala_nm normal" size="64.0" />
          </font>
       </Label>
-      <JFXButton layoutX="90.0" layoutY="130.0" onAction="#btnCustomerOnAction" text="Customer" textAlignment="CENTER" textFill="#7fff73">
+      <JFXButton layoutX="90.0" layoutY="130.0" onAction="#customerBtnOnAction" text="Customer" textAlignment="CENTER" textFill="#7fff73">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="90.0" layoutY="197.0" onAction="#btnItemOnAction" prefHeight="57.0" prefWidth="159.0" text="Item" textAlignment="CENTER" textFill="#5bf4ff">
+      <JFXButton layoutX="90.0" layoutY="197.0" onAction="#itemBtnOnAction" prefHeight="57.0" prefWidth="159.0" text="Item" textAlignment="CENTER" textFill="#5bf4ff">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="90.0" layoutY="269.0" onAction="#btnStatusOnAction" prefHeight="57.0" prefWidth="159.0" text="Status" textAlignment="CENTER" textFill="#efa5ff">
+      <JFXButton layoutX="90.0" layoutY="269.0" onAction="#statusBtnOnAction" prefHeight="57.0" prefWidth="159.0" text="Status" textAlignment="CENTER" textFill="#efa5ff">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="50.0" layoutY="361.0" onAction="#btnPlaceOrderOnAction" prefHeight="78.0" prefWidth="262.0" text="Place Order" textAlignment="CENTER" textFill="#ffd900">
+      <JFXButton layoutX="50.0" layoutY="361.0" onAction="#placeOrderBtnOnAction" prefHeight="78.0" prefWidth="262.0" text="Place Order" textAlignment="CENTER" textFill="#ffd900">
          <font>
             <Font name="System Bold" size="36.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="14.0" layoutY="571.0" prefHeight="51.0" prefWidth="176.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="601.0" layoutY="571.0" prefHeight="51.0" prefWidth="176.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="666.0" layoutY="377.0" onAction="#logOutBtnOnAction" prefHeight="33.0" prefWidth="111.0" style="-fx-background-color: red;" text="Log Out" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
          </font>
       </JFXButton>
    </children>

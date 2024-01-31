@@ -83,3 +83,5 @@ p
 @src/main/java/controller/DashboardForEmployeeFormController.java,9\4\945cf9d5df8f67dee786db6d7c101eee7dab331a
 m
 =src/main/java/controller/DashboardForAdminFormController.java,8\d\8d4fb020206970f82b00d7ebf458f485164b112f
+j
+:src/main/java/controller/CustomerAddingFormController.java,2\d\2d13c23a1958d40972c9e78e85f17793dd4a1e25
