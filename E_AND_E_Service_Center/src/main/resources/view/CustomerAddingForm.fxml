@@ -10,13 +10,13 @@
 
 <AnchorPane fx:id="customerPane" prefHeight="658.0" prefWidth="884.0" stylesheets="@../CssStyleSheet/CustomerRegFormStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerAddingFormController">
    <children>
-      <TableView layoutX="89.0" layoutY="222.0" prefHeight="387.0" prefWidth="707.0">
+      <TableView fx:id="tblCustomer" layoutX="89.0" layoutY="222.0" prefHeight="387.0" prefWidth="707.0">
         <columns>
-          <TableColumn fx:id="colCustomerId" prefWidth="83.20000457763672" text="ID" />
-          <TableColumn fx:id="colCustomerName" prefWidth="134.39999389648438" text="Name" />
-            <TableColumn fx:id="colCustomerContact" prefWidth="160.0" text="Contact" />
-            <TableColumn fx:id="colCustomerEmail" prefWidth="213.60006713867188" text="Email" />
-            <TableColumn fx:id="colCustomerOption" prefWidth="118.39990234375" text="Option" />
+          <TableColumn fx:id="colId" prefWidth="83.20000457763672" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="134.39999389648438" text="Name" />
+            <TableColumn fx:id="colContact" prefWidth="160.0" text="Contact" />
+            <TableColumn fx:id="colEmail" prefWidth="213.60006713867188" text="Email" />
+            <TableColumn fx:id="colOption" prefWidth="118.39990234375" text="Option" />
         </columns>
       </TableView>
       <Label alignment="CENTER" layoutX="14.0" layoutY="78.0" prefHeight="43.0" prefWidth="74.0" text="ID :" textAlignment="CENTER">
@@ -24,17 +24,17 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtCustomerName" layoutX="160.0" layoutY="78.0" prefHeight="43.0" prefWidth="147.0" promptText="Input Customer Name">
+      <JFXTextField fx:id="txtName" layoutX="160.0" layoutY="78.0" prefHeight="43.0" prefWidth="147.0" promptText="Input Customer Name">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtCustomerContact" layoutX="347.0" layoutY="79.0" prefHeight="43.0" prefWidth="208.0" promptText="Input Customer Contact Number">
+      <JFXTextField fx:id="txtContact" layoutX="347.0" layoutY="79.0" prefHeight="43.0" prefWidth="208.0" promptText="Input Customer Contact Number">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtCustomerEmail" layoutX="587.0" layoutY="79.0" prefHeight="43.0" prefWidth="200.0" promptText="Input Customer Email">
+      <JFXTextField fx:id="txtEmail" layoutX="587.0" layoutY="79.0" prefHeight="43.0" prefWidth="200.0" promptText="Input Customer Email">
          <font>
             <Font size="14.0" />
          </font>

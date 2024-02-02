@@ -25,6 +25,8 @@ public class LogInFormController {
     public JFXPasswordField txtPassword;
     public AnchorPane paneLogIn;
     private UserBo usersBo = BoFactory.getInstance().getBo(BoType.USER);
+
+    public static String stillUser;
     @FXML
     void chagnePasswordButtonOnAction(ActionEvent event) {
         Stage stage = (Stage) paneLogIn.getScene().getWindow();
@@ -61,11 +63,12 @@ public class LogInFormController {
                 }
                 if (dto.getPassword().equals(encryptedpassword)) {
                     if(dto.getJobRole().equals("Employee")) {
+                        stillUser = "Employee";
                         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DashboardForEmployeeForm.fxml"))));
                         stage.setTitle("DashBoard Form");
                         stage.show();
                     }if(dto.getJobRole().equals("Owner") || dto.getJobRole().equals("Manager") ) {
-
+                        stillUser = "Manager";
                         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DashboardForAdminForm.fxml"))));
                         stage.setTitle("DashBoard Form");
                         stage.show();

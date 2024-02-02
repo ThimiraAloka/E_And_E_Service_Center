@@ -9,13 +9,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
+import static controller.LogInFormController.stillUser;
 
 public class DashboardForEmployeeFormController {
 
@@ -45,8 +46,15 @@ public class DashboardForEmployeeFormController {
     }
 
     @FXML
-    void customerBtnOnAction(ActionEvent event) {
+    public void customerBtnOnAction(ActionEvent event)  {
 
+        Stage stage = (Stage) lblDate.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerAddingForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.centerOnScreen();
     }
 
     @FXML

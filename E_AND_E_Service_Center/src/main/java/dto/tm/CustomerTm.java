@@ -9,19 +9,19 @@ import lombok.*;
 @Setter
 
 public class CustomerTm {
-    private String customerCode;
-    private String customerName;
-    private int customerContact;
-    private String customerEmail;
+    private String id;
+    private String name;
+    private int contact;
+    private String email;
     private Button btn;
 
     @Override
     public String toString() {
         return "CustomerTm{" +
-                "customerCode='" + customerCode + '\'' +
-                ", customerName='" + customerName + '\'' +
-                ", customerContact='" + customerContact + '\'' +
-                ", customerEmail='" + customerEmail + '\'' +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", contact='" + contact + '\'' +
+                ", email='" + email + '\'' +
                 ", btn=" + btn +
                 '}';
     }

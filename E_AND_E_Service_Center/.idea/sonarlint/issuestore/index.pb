@@ -85,3 +85,5 @@ m
 =src/main/java/controller/DashboardForAdminFormController.java,8\d\8d4fb020206970f82b00d7ebf458f485164b112f
 j
 :src/main/java/controller/CustomerAddingFormController.java,2\d\2d13c23a1958d40972c9e78e85f17793dd4a1e25
+N
+src/main/java/email/Email.java,e\2\e2b27e52514a5c5db17f7196133b5b3f63316f19

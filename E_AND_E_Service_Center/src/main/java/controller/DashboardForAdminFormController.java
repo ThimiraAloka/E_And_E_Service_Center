@@ -15,6 +15,7 @@ import javafx.util.Duration;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 
 public class DashboardForAdminFormController {
 
@@ -46,7 +47,14 @@ public class DashboardForAdminFormController {
 
     @FXML
     void customerBtnOnAction(ActionEvent event) {
-
+        Stage stage = (Stage) lblDate.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerAddingForm.fxml"))));
+            stage.centerOnScreen();
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

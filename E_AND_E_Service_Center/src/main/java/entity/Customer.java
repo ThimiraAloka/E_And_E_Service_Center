@@ -12,10 +12,10 @@ import javax.persistence.Id;
 @Entity
 public class Customer {
     @Id
-    private String customerCode;
-    private String customerName;
-    private int customerContact;
-    private String customerEmail;
+    private String id;
+    private String name;
+    private int contact;
+    private String email;
 
 
 
