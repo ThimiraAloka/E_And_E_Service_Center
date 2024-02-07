@@ -47,7 +47,7 @@ public class DashboardForAdminFormController {
 
     @FXML
     void customerBtnOnAction(ActionEvent event) {
-        Stage stage = (Stage) lblDate.getScene().getWindow();
+        Stage stage = (Stage) paneAdmin.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerAddingForm.fxml"))));
             stage.centerOnScreen();
@@ -60,7 +60,7 @@ public class DashboardForAdminFormController {
 
     @FXML
     void itemBtnOnAction(ActionEvent event) {
-        Stage stage = (Stage) lblDate.getScene().getWindow();
+        Stage stage = (Stage) paneAdmin.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemAddingForm.fxml"))));
             stage.setTitle("Item Adding Form");

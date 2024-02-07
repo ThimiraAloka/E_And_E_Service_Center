@@ -209,7 +209,7 @@ public class CustomerAddingFormController {
                 new Alert(Alert.AlertType.INFORMATION,"Customer "+dto.getId()+" Updated!").show();
                 loadCustomerTable();
                 clearFields();
-                setCustomerId();
+               setCustomerId();
             }
 
         } catch (ClassNotFoundException | SQLException e) {
