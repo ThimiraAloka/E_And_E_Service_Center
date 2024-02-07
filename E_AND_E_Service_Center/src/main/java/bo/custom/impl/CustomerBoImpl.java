@@ -72,6 +72,6 @@ public class CustomerBoImpl implements CustomerBo {
             } catch (ClassNotFoundException e) {
                 throw new RuntimeException(e);
          }
-
     }
+
 }

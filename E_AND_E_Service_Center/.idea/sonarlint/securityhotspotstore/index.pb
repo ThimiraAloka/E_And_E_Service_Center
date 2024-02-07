@@ -87,3 +87,5 @@ j
 :src/main/java/controller/CustomerAddingFormController.java,2\d\2d13c23a1958d40972c9e78e85f17793dd4a1e25
 N
 src/main/java/email/Email.java,e\2\e2b27e52514a5c5db17f7196133b5b3f63316f19
+f
+6src/main/java/controller/ItemAddingFormController.java,a\d\adb8180dd2c3a175b4d3da0d1081cc8fd6813f9d

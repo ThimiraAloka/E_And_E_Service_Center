@@ -51,6 +51,7 @@ public class DashboardForAdminFormController {
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerAddingForm.fxml"))));
             stage.centerOnScreen();
+            stage.setTitle("Customer Adding Form");
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -59,7 +60,15 @@ public class DashboardForAdminFormController {
 
     @FXML
     void itemBtnOnAction(ActionEvent event) {
-
+        Stage stage = (Stage) lblDate.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemAddingForm.fxml"))));
+            stage.setTitle("Item Adding Form");
+            stage.centerOnScreen();
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

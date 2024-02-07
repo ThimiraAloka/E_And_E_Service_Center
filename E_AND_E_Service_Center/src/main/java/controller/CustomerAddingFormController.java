@@ -181,9 +181,11 @@ public class CustomerAddingFormController {
             boolean isSaved = customerBo.saveCustomer(dto);
             if (isSaved){
                 new Alert(Alert.AlertType.INFORMATION,"Customer Saved!").show();
+                setCustomerId();
                 loadCustomerTable();
                 tblCustomer.refresh();
                 clearFields();
+                setCustomerId();
             }
 
         } catch (SQLIntegrityConstraintViolationException ex){
@@ -207,6 +209,7 @@ public class CustomerAddingFormController {
                 new Alert(Alert.AlertType.INFORMATION,"Customer "+dto.getId()+" Updated!").show();
                 loadCustomerTable();
                 clearFields();
+                setCustomerId();
             }
 
         } catch (ClassNotFoundException | SQLException e) {

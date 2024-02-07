@@ -51,6 +51,9 @@ public class DashboardForEmployeeFormController {
         Stage stage = (Stage) lblDate.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerAddingForm.fxml"))));
+            stage.setTitle("Customer Adding Form");
+            stage.centerOnScreen();
+            stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -59,7 +62,15 @@ public class DashboardForEmployeeFormController {
 
     @FXML
     void itemBtnOnAction(ActionEvent event) {
-
+        Stage stage = (Stage) lblDate.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemAddingForm.fxml"))));
+            stage.setTitle("Item Adding Form");
+            stage.centerOnScreen();
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
