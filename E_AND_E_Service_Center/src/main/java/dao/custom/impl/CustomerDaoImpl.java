@@ -73,8 +73,8 @@ public class CustomerDaoImpl implements CustomerDao {
         if (resultSet.next()) {
             return new CustomerDto(
                     resultSet.getString(1),
-                    resultSet.getString(2),
-                    resultSet.getInt(3),
+                    resultSet.getString(3),
+                    resultSet. getInt(2),
                     resultSet.getString(4)
             );
         }

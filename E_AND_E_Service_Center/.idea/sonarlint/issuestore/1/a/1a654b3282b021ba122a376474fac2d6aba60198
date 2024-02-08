@@ -5,7 +5,3 @@ a
 java:S2147H"DCombine this catch with the one at line 70, which has the same body.(ıàÑÎ8ˆˆÉ¨Ö1
 R
 java:S6397@"5Replace this character class by the character itself.(ÈèÒ·8‰ˆÉ¨Ö1
-M
-java:S1128"+Remove this unused import 'dao.DaoFactory'.(ÕèÇ‡úÿÿÿÿ8ŠˆÉ¨Ö1
-J
-java:S1128"-Remove this unused import 'dao.util.DaoType'.(ô¼8ŠˆÉ¨Ö1
