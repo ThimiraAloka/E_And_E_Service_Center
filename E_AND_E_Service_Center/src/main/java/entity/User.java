@@ -7,7 +7,6 @@ import javax.persistence.Id;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 @Entity
@@ -16,5 +15,12 @@ public class User {
     private String email;
     private String password;
     private String jobRole;
+    public User(String email, String password, String jobRole) {
+        this.email = email;
+        this.password = password;
+        this.jobRole = jobRole;
+    }
+
+
 
 }

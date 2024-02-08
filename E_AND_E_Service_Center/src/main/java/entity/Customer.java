@@ -4,7 +4,7 @@ import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-@AllArgsConstructor
+
 @NoArgsConstructor
 @Getter
 @Setter
@@ -17,6 +17,10 @@ public class Customer {
     private int contact;
     private String email;
 
-
-
+    public Customer(String id, String name, int contact, String email) {
+        this.id = id;
+        this.name = name;
+        this.contact = contact;
+        this.email = email;
+    }
 }

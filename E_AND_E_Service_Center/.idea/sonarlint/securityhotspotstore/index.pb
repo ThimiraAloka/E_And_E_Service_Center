@@ -87,3 +87,21 @@ j
 :src/main/java/controller/CustomerAddingFormController.java,2\d\2d13c23a1958d40972c9e78e85f17793dd4a1e25
 N
 src/main/java/email/Email.java,e\2\e2b27e52514a5c5db17f7196133b5b3f63316f19
+f
+6src/main/java/controller/PlaceOrderFormController.java,d\a\da2599fd642ee3543b650efe1c6ca5c43fb8e749
+U
+%src/main/java/entity/OrderDetail.java,9\5\95539df9e9e1bc7fb0d7822ae09bdd972b17ec90
+Y
+)src/main/java/entity/OrderDetailsKey.java,d\8\d8bf35ddbede29bf962753bff8b727d827e0db2f
+P
+ src/main/java/entity/Orders.java,4\8\48211ba3dd7e8b79fb874d28da2202f2c0a2a141
+U
+%src/main/java/dto/OrderDetailDto.java,a\6\a6cd26c16df7a806921856285c150e241aa58567
+O
+src/main/java/dto/OrderDto.java,d\9\d99f6e4a8edc2b395bd1e1d43fbcd641e1fa81f5
+Q
+!src/main/java/dto/tm/OrderTm.java,4\2\42a6499ee3db77d80f585b9bd106d7b57745c86a
+O
+src/main/java/entity/order.java,f\b\fb24b351d528e8801f6c720e4bfed64ce3b93e0c
+X
+(src/main/java/entity/AdditionalItem.java,b\f\bfeeef842a29fcee87ac11235479931f6a4d296e
